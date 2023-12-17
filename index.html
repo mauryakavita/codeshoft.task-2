@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    .container {
+        border: 2px solid rgb(16, 16, 16);
+        height: auto;
+        width: 40%;
+        background-color: black;
+        margin: auto;
+        padding-right: 10px;
+    }
+    
+    .display {
+        height: 50px;
+        width: 80%;
+        padding-top: 20px;
+        margin: auto;
+        margin-top: 4px;
+        border: 2px solid rgb(15, 15, 15);
+        background-color: rgb(239, 233, 233);
+        /* margin-left: 20px; */
+        text-align: center;
+    }
+    
+    .new {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .clear {
+        background-color: aqua;
+        color: black;
+        padding: 10px;
+        /* width: 50px; */
+        /* border-radius: 4px; */
+    }
+    
+    input[type="button"] {
+        height: 60px;
+        width: 70px;
+        margin-left: 30px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-size: 20px;
+        color: rgb(62, 64, 63);
+        border-radius: 4px;
+    }
+    
+    input[type="button"]:hover {
+        background-color: rgb(103, 103, 123);
+        color: aquamarine;
+    }
+</style>
+<script>
+    function dis(value) {
+        document.getElementById("answer").value += value
+
+    }
+
+    function solve() {
+        let a = document.getElementById("answer").value
+        let c = eval(a)
+        document.getElementById("answer").value = c
+    }
+
+
+    // function clear() {
+    //     document.getElementById("answer").value = "1"
+    // }
+</script>
+
+
+<body>
+    <div class="container">
+
+        <form class="new">
+            <input type="text" name="answer" class="display" id="answer">
+            <input type="button" value="1" onclick="dis('1')">
+            <input type="button" value="2" onclick="dis('2')">
+            <input type="button" value="3" onclick="dis('3')">
+            <input type="button" value="4" onclick="dis('4')">
+            <input type="button" value="5" onclick="dis('5')">
+            <input type="button" value="6" onclick="dis('6')">
+            <input type="button" value="7" onclick="dis('7')">
+            <input type="button" value="8" onclick="dis('8')">
+            <input type="button" value="9" onclick="dis('9')">
+            <input type="button" value="+" onclick="dis('+')">
+            <input type="button" value="-" onclick="dis('-')">
+            <input type="button" value="*" onclick="dis('*')">
+            <input type="button" value="/" onclick="dis('/')">
+            <input type="button" value="=" onclick="solve()">
+            <input type="button" value="0" onclick="dis('0')">
+            <input class="clear" type="button" value="clear" onclick='  document.getElementById("answer").value = " "'>
+
+            <!-- <input type="button" value="clear" onclick="  document.getElementById('answer').value ='1'> -->
+
+        </form>
+    </div>
+
+</html>
