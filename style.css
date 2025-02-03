@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(248, 76, 133);
+    text-align: center;
+}
+
+.container {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.buttons {
+    box-shadow: 0 0 1rem black;
+    border-radius: 3%;
+    height: 70vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8vmin;
+}
+
+.display {
+    height: 10vmin;
+    width: 53vmin;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.963);
+    font-size: 4vmin;
+    color: rgb(14, 25, 53);
+}
+
+.btn {
+
+    height: 10vmin;
+    width: 10vmin;
+    border-radius: 1rem;
+
+    box-shadow: 0px 0px 10px black;
+    font-size: 6vmin;
+    color: rgb(54, 8, 16);
+
+
+}
+
+#clr {
+    height: 10vmin;
+    width: 16.9vmin;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.963);
+    font-size: 6vmin;
+    color: rgb(54, 8, 16);
+
+}
+
+input[type="button"]:hover {
+    background-color: gray;
+    color: yellow;
+}
+
+#clr:hover {
+    background-color: yellow;
+
+}
+
+.md {
+    height: 10vh;
+    display: flex;
+    border: 2px solid gray;
+    background-color: rgb(48, 26, 32);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#mode {
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    display: flex;
+    padding: 10px 22px;
+    
+    height: 7vmin;
+    width: 15vmin;
+    border-radius: 50px;
+    background-color: gainsboro;
+    box-shadow: 0 0 1rem rgba(191, 184, 184, 0.963);
+
+
+}
+
+#mode:hover {
+    background-color: yellow;
+    box-shadow: 0 0 1rem rgba(209, 208, 200, 0.963);
+
+
+}
+
+body.dark-mode {
+    background-color: black;
+
+}
+
+
+@media screen and (max-width: 700px) {
+    #mode {
+        font-size: 9.8px;
+        padding: 20px 35px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+    }
+}
